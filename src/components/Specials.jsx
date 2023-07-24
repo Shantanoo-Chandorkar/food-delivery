@@ -11,9 +11,9 @@ function Specials(props) {
       "https://easy-seal-culottes.cyclic.app/menu/foodData",
       {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        // headers: {
+        //   "Content-Type": "application/json",
+        // },
       }
     );
 

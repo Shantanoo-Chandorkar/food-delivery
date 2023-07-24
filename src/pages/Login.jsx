@@ -22,9 +22,9 @@ function Login() {
       "https://easy-seal-culottes.cyclic.app/user/loginuser",
       {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        // headers: {
+        //   "Content-Type": "application/json",
+        // },
         body: JSON.stringify({
           email: credentials.email,
           password: credentials.password,

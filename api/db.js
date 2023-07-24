@@ -35,3 +35,11 @@ const mongoDB = async () => {
 mongoDB();
 
 module.exports = mongoDB;
+
+// Make a .env file and paste following code if you want.
+// Or make your own database.
+// PORT=5000
+// MONGO_URI=mongodb://shantanoo:shntn00r0hn1209@ac-a78qnen-shard-00-00.tqracre.mongodb.net:27017,ac-a78qnen-shard-00-01.tqracre.mongodb.net:27017,ac-a78qnen-shard-00-02.tqracre.mongodb.net:27017/foodappmern?ssl=true&replicaSet=atlas-k3tspt-shard-0&authSource=admin&retryWrites=true&w=majority
+
+// MONGO_URI=mongodb+srv://shantanoo:shntn00r0hn1209@cluster0.tqracre.mongodb.net/foodappmern
+// JWT_TOKEN="ThisWillBeMyThirtyTwoBitSecret"

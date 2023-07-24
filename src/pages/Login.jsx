@@ -9,6 +9,7 @@ function Login() {
 
   let navigate = useNavigate();
 
+  // localhostURI: http://localhost:5000/api/user/loginuser
   const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log(
@@ -17,16 +18,19 @@ function Login() {
     //     password: credentials.password,
     //   })
     // );
-    const response = await fetch("http://localhost:5000/api/user/loginuser", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: credentials.email,
-        password: credentials.password,
-      }),
-    });
+    const response = await fetch(
+      "https://easy-seal-culottes.cyclic.app/user/loginuser",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: credentials.email,
+          password: credentials.password,
+        }),
+      }
+    );
     const json = await response.json();
     // console.log(json);
 

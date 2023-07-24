@@ -13,22 +13,26 @@ export default function Cart() {
     );
   }
 
+  // localhostURI: http://localhost:5000/api/orders/orderData
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
     // console.log(data,localStorage.getItem("userEmail"),new Date())
-    let response = await fetch("http://localhost:5000/api/orders/orderData", {
-      // credentials: 'include',
-      // Origin:"http://localhost:3000/login",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        order_data: data,
-        email: userEmail,
-        order_date: new Date().toDateString(),
-      }),
-    });
+    let response = await fetch(
+      "https://easy-seal-culottes.cyclic.app/orders/orderData",
+      {
+        // credentials: 'include',
+        // Origin:"http://localhost:3000/login",
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          order_data: data,
+          email: userEmail,
+          order_date: new Date().toDateString(),
+        }),
+      }
+    );
     // console.log("JSON RESPONSE:::::", response.status);
     if (response.status === 200) {
       dispatch({ type: "DROP" });

@@ -3,10 +3,13 @@ require("dotenv").config();
 
 const mongoDB = async () => {
   await mongoose
-    .connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
+    .connect(
+      "mongodb+srv://shantanoo:shntn00r0hn1209@cluster0.tqracre.mongodb.net/foodappmern",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+    )
     .then(async () => {
       console.log("DB Connected Successfully");
     })

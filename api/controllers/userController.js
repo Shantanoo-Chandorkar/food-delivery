@@ -53,7 +53,7 @@ const LoginUser = async (req, res) => {
       },
     };
 
-    const authToken = jwt.sign(data, process.env.JWT_TOKEN);
+    const authToken = jwt.sign(data, "ThisWillBeMyThirtyTwoBitSecret");
 
     return res.status(200).send({ success: true, authToken: authToken });
   } catch (err) {

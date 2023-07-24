@@ -7,15 +7,12 @@ function Oven(props) {
 
   // localhostURI: http://localhost:5000/api/menu/foodData
   const loadData = async () => {
-    let response = await fetch(
-      "https://easy-seal-culottes.cyclic.app/api/menu/foodData",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    let response = await fetch("http://localhost:5000/api/menu/foodData", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
     response = await response.json();
     // console.log(response[0], response[1]);

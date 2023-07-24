@@ -1,8 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-// const port = process.env.PORT || 5000;
-const port = "https://easy-seal-culottes.cyclic.app";
+const port = process.env.PORT || 5000;
 
 const mongoDB = require("./db");
 

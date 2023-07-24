@@ -8,7 +8,8 @@ const mongoDB = require("./db");
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://sweetery-shop.netlify.app"
+    // "https://sweetery-shop.netlify.app"
+    "http://localhost:3000/"
   );
   res.header(
     "Access-Control-Allow-Headers",

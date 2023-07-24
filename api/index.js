@@ -31,6 +31,8 @@ app.get("/", (req, res) => {
   res.json("Server connected successfully");
 });
 
-app.listen(port, () => {
-  console.log(`Server is listening on ${port}.`);
+mongoDB().then(() => {
+  app.listen(port, () => {
+    console.log(`Server is listening on ${port}.`);
+  });
 });

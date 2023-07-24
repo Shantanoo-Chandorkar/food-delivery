@@ -11,7 +11,10 @@ app.use((req, res, next) => {
     // "https://64be659796d6bd077f82ee93--nimble-platypus-8b683c.netlify.app"
     "http://localhost:3000"
   );
-
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
   next();
 });
 

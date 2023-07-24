@@ -15,7 +15,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      "https://easy-seal-culottes.cyclic.app/user/createuser",
+      "https://easy-seal-culottes.cyclic.app/api/user/createuser",
       {
         method: "POST",
         headers: {

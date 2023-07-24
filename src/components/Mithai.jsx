@@ -8,7 +8,7 @@ function Mithai(props) {
   // localhostURI: http://localhost:5000/api/menu/foodData
   const loadData = async () => {
     let response = await fetch(
-      "https://easy-seal-culottes.cyclic.app/menu/foodData",
+      "https://easy-seal-culottes.cyclic.app/api/menu/foodData",
       {
         method: "POST",
         headers: {

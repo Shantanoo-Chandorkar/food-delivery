@@ -18,7 +18,7 @@ export default function Cart() {
     let userEmail = localStorage.getItem("userEmail");
     // console.log(data,localStorage.getItem("userEmail"),new Date())
     let response = await fetch(
-      "https://easy-seal-culottes.cyclic.app/orders/orderData",
+      "https://easy-seal-culottes.cyclic.app/api/orders/orderData",
       {
         // credentials: 'include',
         // Origin:"http://localhost:3000/login",

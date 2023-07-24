@@ -1,0 +1,83 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Sweetery Colors:
+// Dark:
+// text: f6f6f6,
+// taglines: e0a96d,
+// button-text, corousels: ,
+// buttonsbg: f6f6f6, 8aaae5
+// Headers: 4f81c0,
+// portalbg, navbar:
+
+// Light:
+// text: 783937,
+// taglines: e0a96d,
+// button-text, corousels: ,
+// buttonsbg: 783937,
+// Headers: 155f91,
+// portalbg, navbar:
+
+:root {
+  --dark-color: #201e20;
+  --light-color: #fffdf6;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: var(--dark-color);
+  .navbar {
+    background-color: #fffdf65f;
+
+    .logo {
+      color: #3f000f;
+
+      &::after {
+        background: #f7e0d2;
+      }
+    }
+  }
+  .btn {
+    color: #3f000f;
+    background-color: #f7e0d2;
+  }
+
+  .tagline {
+    .tag-btn {
+      h1 {
+        color: #def2f1;
+      }
+    }
+    .tag-info {
+      color: #97bc62;
+    }
+  }
+}
+
+[data-bs-theme="light"] {
+  --bs-body-bg: var(--light-color);
+  .navbar {
+    background-color: #201e20b0;
+
+    .logo {
+      color: #f7e0d2;
+
+      &::after {
+        background: #3f000f;
+      }
+    }
+  }
+  .btn {
+    color: #f7e0d2;
+    background-color: #3f000f;
+  }
+
+  .tagline {
+    .tag-btn {
+      h1 {
+        color: #2b7a78;
+      }
+    }
+    .tag-info {
+      color: #97bc62;
+    }
+  }
+}
